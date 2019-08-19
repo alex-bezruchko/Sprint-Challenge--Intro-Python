@@ -78,7 +78,7 @@ print(e)
 print("Names and ages between 27 and 32:")
 f = []
 for h in humans:
-    if 27 < h.age < 33:
+    if 26 < h.age < 33:
         tuple1 = (str(h.name), h.age)
         f.append(tuple1)
 print(f)
@@ -88,9 +88,16 @@ print(f)
 # The "humans" list should be unmodified.
 print("All names uppercase:")
 g = []
+for h in humans:
+    uppercaseName = str(h.name).upper()
+    newAge = h.age + 5
+    newHumans = Human(uppercaseName, newAge)
+    g.append(newHumans)
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 h = []
+for i in humans:
+    h.append(i.age**.5)
 print(h)
