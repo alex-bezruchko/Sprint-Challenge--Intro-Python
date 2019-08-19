@@ -49,17 +49,6 @@ def cityreader(cities=[]):
 
 cityreader(cities)
 
-
-def cityreader(cities=[]):
-  # TODO Implement the functionality to read from the 'cities.csv' file
-  # For each city record, create a new City instance and add it to the
-  # `cities` list
-
-    return cities
-
-
-cityreader(cities)
-
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
     print(c)
